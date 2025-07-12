@@ -1,0 +1,41 @@
+@charset "UTF:8";
+
+img{
+    display: block;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius:10px ;
+    
+}
+p {
+    text-align: justify;
+}
+
+body {
+    background-image: linear-gradient(to right,#FF4D99,#800037);
+    display: flex;
+}
+
+main{
+    background-color: rgb(249, 208, 204);
+    width: 850px; /*largura*/
+    padding: 5px; /*acrescenta 10px na largura,após a quebra de linha do texto*/
+    margin:auto; /*Centraliza todo o conteúdo independente de sua posição: tela cheia, minimizada etc*/
+    border-radius: 10px;/*Deixa todas as bordas arredondadas*/
+    box-shadow:5px 5px 20px #3e3b2b ;/*Realiza o sobreamento em volta da cixa de texto, primeiro valor:em cima; segundo valor: em baixo; terceiro valor: determina o tamanho do degradê; e por ultimo a cor.*/ 
+    text-indent: 30px;/*Coloca o parágrafo.*/
+    font: normal 16px arial, verdana, serif;
+  }
+
+  h1{
+    color:#802922 ;
+    text-align: center;/*Deixa o título centralizado*/
+    text-shadow: 1px 1px 1px black;
+  }
+
+  h2{
+    color: #983028;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+  }

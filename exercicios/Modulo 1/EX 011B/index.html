@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <!--Adicionando diferentes formatos de videos, para diferentes mecanismos de pesquisa.-->
+<video width="300" poster="midia/capa.png" controls autoplay loop>
+    <source src="midia/meuvideo.webm" type="video/webm">
+    <source src="midia/meuvideo.mp4" type="video/mp4">
+    <source src="midia/meuvideo.ogv" type="video/ogv">
+    <p>Seu navegador não é compatível com o formato do video</p>
+</video>
+<h1>Inserindo vídeo do YouTube</h1>
+<!--Ao incorporar videos do youtube, não utilizamos o nosso servidor, ou o vervidor contratado, ou seja, não utilizamos nossa banda para rodar o conteúdo de video, pois ultilizará o serviço do youtube. -->
+<iframe width="560" height="315" src="https://youtube.com/embed/YADP6zw6EB0" frameborder="0" allowfullscreen  ></iframe>
+
+<iframe width="560" height="315" src="https://youtube.com/embed/lTxn2BuqyzU" frameborder="0" allowfullscreen  ></iframe>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semântica do HTML5</title>
+    <h1>"Semântica é o significado dos vocábulos, por oposição à sua forma."</h1>
+</head>
+<!--<address> usado para valorizar a semântica, logo suas tags tentam levar um significado embutido muito forte.-->
+<body>
+    <p>
+     <address>Aqui esta um  exemplo para declarar um emdereço.</address><br>
+
+     <em>Aqui está um exemplo para dar emfase ao texto.</em><br>
+
+     <strong>Aqui está um exemplo de como ficaria o texto em negrito</strong><br>
+
+     <!--Para mudar a cor da canete tem que utilizar CSS-->
+     <mark>Aqui está um exemplo de um texto marcado com marca-texto.</mark><br>
+
+     <small>Aqui está um exemplo de um texto pequeno.</small><br>
+
+     <del>Aqui está um exemplo para deixar o texto desconsiderado pelo leito, ou seja com uma linha riscando todas as palavras do texto.</del><br>
+
+     <ins>Aqui está um exemplo de um texto inserido, ou seja, sua informação é de suma importância para o leitor do conteúdo.</ins><br>
+
+     H<sub>2</sub>O esse é um exemplo de como deixar alguma letra/palavra subscrito <br>
+
+     <sup>E</sup>dvânde, é um exemplo de como deixar alguma letra/palavra sobrescrito <br>
+    </p>
+    <p>
+      <!--Trechos de código, como deixá-los apresentável na Web.-->
+      <h1>Exemplo de código em Python</h1>
+      <code>
+        nome = "Nora"
+        linguagem_favorita = "Python"
+
+        print(f"Olá, eu sou {nome}. Estou aprendendo {linguagem_favorita}.")
+
+        <!--Nessa tag apenas mudamos signitivamente o formato da petra.-->
+      </code><br>
+      Acima notamos que a fonte da letra foi trocada para podermos visualizar melhor o código, mas a formatação foi totalmente perdida.
+      <pre><code>
+        nome = "Nora"
+        linguagem_favorita = "Python"
+
+        print(f"Olá, eu sou {nome}. Estou aprendendo {linguagem_favorita}.")
+      </code></pre> <br>
+      Acima temos as linhas de código em outra fonte e com sua tabulação original preservada, pois utilizamos a tag &lt; pre &gt;
+    </p>
+    <h1>Citações</h1>
+    <p>
+        <!--Quando queremos fazer uma citação em html, podemos usar a tag <q> </q> vai receber automaticamente as aspas, mas não terá nenhum deslocamento. essa técnica é mais usada quando queremos uma citação no meio de um parágrafo.-->
+        <h2><sup><ins>Clarice lispector</ins></sup></h2>
+        <q>Ela é tão livre que um dia será prese. <br>
+            -Presa por quê?<br>
+            -Por excesso de liberdade. <br>
+            -Mas essa liberdade é inocente? <br>
+            -É. Até mesmo ingênua. <br>
+            -Então por que a prisão? <br>
+            -Porque a liberdade ofende. 
+        </q><br>
+        Acima temos um trecho de uma prosa de clarice, e esta entre "aspas" para expressar uma ideia ou algo que alguém disse, para isso usamos a tag &lt; q &gt; &lt;/q &gt;
+    </p>
+
+    <h2>citação longa utilizando a tag &lt; blockquote &gt;</h2>
+    <p>
+      <!--Para criar uma citação mais longo, ou até mesmo um parágrafo, usamos a tag abaixo.-->
+      <blockquote cite="https://novabrasilfm.com.br/arte-e-cultura/clarice-lispector-poemas">
+      Olhe, tenho uma alma muito prolixa e uso poucas palavras. <br>
+      Sou irritável e firo facilmente. <br>
+      Também sou muito calmo e perdoo logo. <br>
+      Não esqueço nunca. <br>
+      Mas há poucas coisas de que eu me lembre.
+      </blockquote>
+    </p>
+    <h2>Abriviações usando a tag &lt;abbr &gt;</h2>
+    <p>
+      O termo abaixo esta abreviado, porém se passar o mouse acima, o nome completo é revelado ao usuário. <br>
+      Eu estou estudando pelo <abbr title="course english in brazil">CEIB</abbr> para destravar meu inglês!!
+      <!--deve-se colocar o termo abreviado dentro do sinal de maior/menor. O termo completo que está entre "aspas" aparecerá ao usuário quando passar o mouse acima da abreviação.-->  
+    </p>
+    <h2>invertendo  textos usando a tag &lt; bdo</h2>
+    <p>
+      para determinar o sentido da direção, usamos o parâmetro (dir) na qual colocamos determinamos a direção, (rtl= da direita para a esquerda)
+      (ltr= da esquerda para a direita). <br>
+
+      <bdo dir="ltr">Este texto está invertido no formato left to right.</bdo><br>
+      o texto abaixo está escrito da direita para a esquerda. <br>
+      <bdo dir="rtl">Este texto está invertido no formato right to left.</bdo>
+    </p>
+
+
+
+</body>
+</html>

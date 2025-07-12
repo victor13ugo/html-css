@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*tudo que começa com @ em css no inicio do documento é uma regra, na qual o algoritmo irá obdecer, no caso do @charset "UTF-8" sucedido de (;) posibilita a visualização correta de caracteres, como: acentos e simbolos*/
+
+    body {
+        background-color: #bfedfc;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    h1 {
+        color: #4f4fd9;
+    }
+    h2 {
+        color: #c73838;
+    }
+    p {
+        text-align: justify;
+    }

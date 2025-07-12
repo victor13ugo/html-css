@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!--Ao utilizar apenas o (a href="") sobrepomos ao site, porém a desvantagem é que não abre uma nova guia para apresentar o conteúdo do material.-->
+    <p>Você pode acessar o meu <a href="https://github.com/victor13ugo?tab=repositories">repositório público no GitHub</a></p>
+    <!--Para abrir o link em outra aba, usá-se o (target="_blank el="external")-->
+    <p>Você pode acessar minha págino do facebook <a href="https://www.facebook.com/groups/721086816337312/?hoisted_section_header_type=recently_seen&multi_permalinks=1194852942294028&locale=pt_BR" target="_blank" rel="external">pensamentos, poesia e literatura.</a></p>
+    
+    <h1>Link interno</h1>
+    <p>Esta é a primeira página do site, se você quiser visitar a segunda basta clicar no link ao lado <a href="pag002.html" rel="next">pagina2</a></p>
+    <p>Você também pode acessar a nossa terceira pagina, click no link ao lado <a href="pag003.html" rel="next">pagina3</a></p>
+    <!--abaixo temos um conteúdo que está localizado em outra pasta, porém no mesmo computador/servidor, por isso foi criado o caminho (noticia/004.html)-->
+    <p>Se quiser estar por dentro do que esta acontecendo no nosso país dê uma olhada na página de noticias, clicando no link ao lado <a href="noticias/pag004.html" rel="next">pagina 4</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li> <a href="livro/framework conceitual para a construção de interfaces persuasivas educacionais.pdf">Baixar o livro em PDF</a></li>
+       
+        <li> <a href="livro/framework conceitual para a construção de interfaces persuasivas educacionais.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

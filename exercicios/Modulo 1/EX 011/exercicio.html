@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+
+    <picture>
+    <!--para funcionar, temos que colocar em ordem os elemento, do menor para o maior.-->
+        <source media="(max-width:750px )" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir áudio em html</p>
+    <audio src="midia/Rihanna - Kiss It Better.mp3" controls autoplay></audio>
+
+    <h1>Reproduzindo áudio com &lt;source&gt;</h1>
+    <!--Aqui foi declarada preload="metadata" que carrega o arquivo e suas informações, como tempo etc.. contros=loop irá realizar a repetição do audio, quando chegar ao final.-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Happy Mistake - RKVC.mp3" type="audio/npeg">
+        <source src="midia/Happy Mistake - RKVC.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não possui suporte para reproduzir esse áudio.<a href="midia/Rihanna - Kiss It Better.mp3">Clique aqui para baixar o arquivo de áudio mp3.</a></p>
+    </audio>
+
+
+</body>
+</html>

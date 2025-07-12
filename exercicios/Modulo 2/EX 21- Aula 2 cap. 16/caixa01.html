@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="po-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{ /*box-level*/
+            background-color: lightblue;
+            height: 300px; 
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategrey;
+
+/*acima temos a declaração da borda e seus respectivos valores, porém, podemos usar o short-hand na sua declaração para simplificar a sintaxe ao programar. Ficando dessa maneira:
+
+            border: 10px solid darkslategray;*/
+
+
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+/* abaixo temos o short-hand para o padding, como suas formas de serem declaradas e seus valores:
+            
+        padding: 10px 10px 10px 10px ; 
+
+        padding: 20px 15px; 
+        ou seja, 20px para top e bottom, 15px para left e right.
+
+        padding:10px; 
+        ou seja, quando declarado apenas um valor, todos os lados o recebe.
+*/
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+/*short-hand para margin, abaixo:
+
+            margin: 20px auto 40px auto; 
+            ou seja, declaramos dois valores, um para o top e bottom, e outro para right e left, obs.: o "auto" está sendo usado para centralizar a caixo no meio do navegador.
+*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+/* short-hand para outline:
+
+            outline: 5px dashed salmon;
+            ou seja, seguimos a ordem: width, depois style e ao final, color.
+
+*/
+
+
+        }
+
+        a { /* inline- level*/
+            border-width: 5px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+        }
+
+        
+
+
+
+
+    </style>
+    <title>Modelo de Caixas</title>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
