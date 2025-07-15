@@ -76,14 +76,14 @@ header h1 {
 #frase-principal {/*div com uma id para aplicar o espaçamento entre a frase principal e a barra de pesquisa*/
     font-family: "open sans";
     text-align: center;
-    padding-bottom: 30px;
+    
 }
 #frase-principal h2{
     font-family: "open seans";
     font-size: 20px;
     text-align: center;
     color: rgba(255, 255, 255, 0.922);
-    padding: 2px;
+    padding-bottom:50px ;
 }
 
 header {
