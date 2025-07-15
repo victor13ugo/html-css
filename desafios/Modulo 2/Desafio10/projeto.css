@@ -73,11 +73,9 @@ header h1 {
     padding-top: 15px;
 }
 
-#frase-principal {/*div com uma id para aplicar o espaçamento entre a frase principal e a barra de pesquisa*/
-    font-family: "open sans";
-    text-align: center;
+
     
-}
+
 #frase-principal h2{
     font-family: "open seans";
     font-size: 20px;
