@@ -39,7 +39,7 @@
 #menu-horizontal ul li a {
     color: white;
     padding: 10px;
-    display: inline-block;
+    display: inline-flex;
     text-decoration: none; 
     transition: background-color .6s;
 }
@@ -72,9 +72,6 @@ header h1 {
     color: rgba(255, 255, 255, 0.966);
     padding-top: 15px;
 }
-
-
-    
 
 #frase-principal h2{
     font-family: "open seans";
