@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--anatomia para tabelas grandes
+    Table
+        Thead
+            TR, TD, TH
+        TBody
+            TR, TD, TH
+        Tfoor
+            TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 649</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia </td>
+                <td class="numero">14 850 513 </td>
+            </tr>
+            <tr>
+                <td> Paraná </td>
+                <td class="numero">11 824 665 </td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul </td>
+                <td class="numero">11 229 915 </td>
+            </tr>
+            <tr>
+                <td>Pernambuco </td>
+                <td class="numero">9 539 029 </td>
+            </tr>
+            <tr>
+                <td>Ceará </td>
+                <td class="numero">9 233 656 </td>
+            </tr>
+            <tr>
+                <td>Pará </td>
+                <td class="numero">8 664 306 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina </td>
+                <td class="numero">8 058 441 </td>
+            </tr>
+            <tr>
+                <td>Goiás </td>
+                <td class="numero">7 350 483 </td>
+            </tr>
+            <tr>
+                <td>Maranhão </td>
+                <td class="numero">7 010 960 </td>
+            </tr>
+            <tr>
+                <td>Amazonas </td>
+                <td class="numero">4 281 209 </td>
+            </tr>
+    
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td><strong>171 396 560</strong></td>
+            </tr>
+            
+        </tfoot>
+    </table>
+</body>
+</html>
