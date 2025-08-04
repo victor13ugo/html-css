@@ -8,10 +8,11 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-
+/*propriedades da tabela, fonte, */
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         th, td {
@@ -22,6 +23,27 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+/*criando o cabeçalho fixo*/
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+/*criando o efeito zebrado*/
+        tbody > tr:nth-child(2n-1) { /*linhas ímpares*/
+        background-color: lightgray;
+        }
+        tbody > tr:nth-child(even){ /*linhas pares*/
+            background-color: lightgreen;
+        }
+
+        td.numero {
+            text-align: right;
+        }
+
+        p {
+            text-align: justify;
         }
 
     </style>
@@ -39,10 +61,11 @@
     -->
 
     <table>
+        <caption>Quantidade populacional dos estados brasileiro</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -102,11 +125,17 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td><strong>171 396 560</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>171 396 560</strong></td>
             </tr>
             
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi deleniti omnis saepe adipisci assumenda, reiciendis nostrum ex aliquam debitis Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptate excepturi vero laborum numquam reprehenderit natus, magni, animi eius sapiente veritatis! Pariatur in veniam, repudiandae aliquam dolorem autem fugiat ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. At quod facere illo! Saepe laudantium consequuntur nihil esse. Sunt possimus officiis illum cupiditate id, corporis tenetur quam nesciunt, culpa, vero quibusdam tempora incidunt? Consequatur veniam magni beatae explicabo cumque impedit libero consectetur numquam placeat, blanditiis incidunt non voluptas aut cum est? Fugit, ex facilis delectus recusandae ea esse libero voluptatem quisquam eaque eligendi eius. Maiores numquam alias repudiandae corporis magnam nam nemo similique sapiente earum magni. Deserunt ipsa ex rerum aliquam obcaecati assumenda numquam praesentium libero distinctio accusantium voluptate, dolorum quasi reprehenderit voluptates ullam? Quis deleniti excepturi unde ut cupiditate quaerat?
+    Repellat aperiam, atque autem beatae placeat alias voluptatum. Laborum delectus velit distinctio? Quaerat molestiae fuga natus accusantium, cum labore tenetur quam quibusdam iste dolores corrupti, pariatur earum sint ullam perferendis? Quia accusantium illo deserunt ipsum fuga? Nihil aliquam ad magnam maxime sed natus, nobis consequuntur eveniet ex aliquid nostrum harum recusandae asperiores, officia eaque, rerum maiores! Voluptatum quidem temporibus corporis iste modi vero quas quos atque illum totam, doloremque voluptas illo dolores molestiae repellat velit amet sunt itaque maxime, nesciunt a excepturi? Eaque natus, soluta illum voluptatem rerum hic nesciunt modi iure unde, impedit aliquid placeat porro eius tempore! Deserunt!
+    Eius animi excepturi dolorem velit est commodi numquam error fugiat modi nobis pariatur obcaecati, sed quidem provident alias tempora, tempore eum dicta ullam molestias possimus minima? Ipsum est qui aspernatur ipsam fugiat nihil ullam odio soluta dicta, vero tempora cupiditate accusamus temporibus itaque quibusdam repudiandae ab voluptatem. Fuga corrupti repellat molestias dolor ipsum ullam earum incidunt illo vero nemo deleniti qui aspernatur id est eum voluptate odio odit, temporibus saepe iste cumque numquam dignissimos? Quae iusto nesciunt commodi vitae facilis doloremque explicabo provident possimus ex? Consequuntur, saepe cumque deserunt ducimus natus maiores dicta, exercitationem eligendi perspiciatis odio unde, odit perferendis.
+    Sequi repellat quas facilis magnam laudantium necessitatibus nesciunt quasi quod omnis est assumenda accusamus eveniet ex, asperiores ab. Cumque obcaecati sint fuga soluta consequuntur laboriosam est omnis repellendus. Tempora accusantium suscipit facere accusamus consequatur? Rerum quis expedita, ea cupiditate sunt provident voluptatem veritatis laboriosam inventore nulla eius omnis corporis ullam ut dicta fugiat quae iure nihil. Libero a inventore laboriosam voluptatem? Placeat harum sed consequuntur magni saepe! Itaque laudantium consectetur eveniet et, vero sint! Libero unde quod quis, et totam aliquid dolore veritatis, consectetur sunt eligendi maiores magnam reiciendis animi cum corrupti eum molestiae maxime nostrum iste harum nisi? Id!
+    Necessitatibus doloribus enim excepturi explicabo cum nisi reiciendis illum velit assumenda obcaecati commodi nulla nam, labore odio! Totam quos soluta sint asperiores eos laudantium. Dolorum, odio eveniet! Obcaecati velit, suscipit harum quam voluptates voluptate vel quia! Dolorum voluptas pariatur quos repellendus quis. Vero suscipit excepturi nulla debitis modi, harum veritatis ex nisi perspiciatis reiciendis accusamus quasi soluta provident aliquam! Minima unde at sed, est quibusdam blanditiis quas a, enim quis voluptates nostrum doloremque? Provident, iure! Autem tempore ea in atque consequatur. Sunt, pariatur quo, hic blanditiis eveniet aperiam eum dicta optio saepe cupiditate sapiente repudiandae beatae perferendis odio magnam dolorem!
+    </p>
 </body>
 </html>
