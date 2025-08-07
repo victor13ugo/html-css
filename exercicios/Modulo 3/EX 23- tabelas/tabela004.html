@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com dados reais</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        caption {
+            text-align: center;
+            font-size: large;
+            font-weight: bolder;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .genero {
+            background-color: #80808069;
+        }
+        .cabeçalho {
+            background-color: #808080c0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+
+    <table>
+        <caption>
+            filmes favoritos
+        </caption>
+        <thead class="cabeçalho">
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" class="genero" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Vitoria Melo</td>
+                <td>Oblívion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td>Julia do Carmo</td>
+                <td>Vingadores</td>
+                <td>De pernas pro ar</td>
+                <td>The substance</td>
+            </tr>
+            <th rowspan="5" class="genero" scope="rowgroup">Homens</th>
+            <tr>
+                <td>Bianco Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudio Melo</td>
+                <td>Oblívion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td>Davi do Carmo</td>
+                <td>Vingadores</td>
+                <td>De pernas pro ar</td>
+                <td>The substance</td>
+            </tr>
+            <tr>
+                <td>Roberto Silva</td>
+                <td>Harry Potter</td>
+                <td>O diabo veste prada</td>
+                <td>A proposta</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row" class="cabeçalho">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
