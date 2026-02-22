@@ -1,4 +1,4 @@
 
-    <p>os dados foram enviados ao banco de dados, obrigado pela preferência!!</p>
+    Os dados foram enviados ao banco de dados, obrigado pela preferência!!
 
 

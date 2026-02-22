@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        #formulario {
+            text-align: left;
+            padding: 20px 20px;
+        }
+
+        #formulario label { 
+            background-color: rgba(128, 128, 128, 0.492);
+            padding: 6px;
+        
+        }
+
+        #formulario p {
+            color: black;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #formulario  input{
+            color:black;
+            font-size: large;
+            padding: 6px;
+        }
+        .env:hover {
+         background-color: rgba(0, 56, 0, 0.605);
+            transform: scale(1.1);
+        }
+        p {
+            padding-top: 10px;
+        }
+
+        .lim:hover {
+            background-color: rgba(104, 4, 4, 0.518);
+            transform: scale(1.1);
+        }
+
+        fieldset {
+            width:650px ;
+            background-color: #1d1b1b3a;
+            background-image:linear-gradient(to right, #f7f7f9c3, #00000040);
+            font-family: Arial, Helvetica, sans-serif;
+            height: 180px;
+            padding:10px;
+        }
+       h1 {
+        padding: 20px;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form id="formulario" action="cadastro.php" method="get">
+        <fieldset><!--cria uma área para agrupar os dados-->
+                <legend> <strong>Dados Pessoais</strong></legend>
+                <p>
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="maria@gmail.com">
+                </p>
+                <p>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
+                </p>
+                <!--Estudar mais sobre RegEx-->
+                <p>
+                    <input class="env" type="submit" value="Enviar">
+                    <input class="lim" type="reset" value="Limpar">
+                </p>
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
