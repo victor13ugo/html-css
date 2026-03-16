@@ -5,3 +5,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f0f75;
+}
+
+h1 {
+    color:white;
+}
