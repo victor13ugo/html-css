@@ -5,3 +5,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+/*configurações gerais para (retrato/paisagem)*/
+html, body {
+    width: 100vw;
+    height: 100vw;
+    background-color:#233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    padding: 10px;
+}

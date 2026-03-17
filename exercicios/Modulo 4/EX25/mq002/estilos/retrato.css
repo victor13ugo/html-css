@@ -5,13 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+/*Aparelho na posição vertical*/
 
-html body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #0f0f75;
-}
-
-h1 {
-    color:white;
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
 }
