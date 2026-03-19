@@ -8,6 +8,6 @@
 /*Aparelho na posição vertical*/
 
 body {
-    background-image: url(../imagens/cev-portrait.jpg);
+    background-image: url(./imagens/cev-portrait.jpg);
     background-position: center bottom;
 }
