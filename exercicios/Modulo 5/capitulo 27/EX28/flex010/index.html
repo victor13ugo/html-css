@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: blue;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            /*flex-basis, define o comportamento do elemento (filho)principalmente com o width*/
+            flex-basis: 250px;
+            /*flex-shrink, quando está com o valor 0 ele não diminui, quando está com o valor 1 ele diminui*/
+            flex-shrink: 1;
+            /*flex-grow, quando ele está com o valor 0 ele não cresce, quando está com o vslor 1 ele cresce.*/
+            flex-grow: 1;
+    
+
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda quisquam, nostrum dolorem ex molestiae vero praesentium nihil veniam blanditiis aspernatur nobis perferendis aliquid, sunt repellendus. Modi tempora explicabo deserunt consectetur.
+        Itaque ab quasi tempore aperiam illum cupiditate amet numquam nam nulla, esse excepturi est minima, porro saepe laborum fugit quisquam repellendus assumenda fuga. Dolorum consequatur veritatis ut. Fuga, corporis? Repellat.
+        Harum officia, non amet delectus rerum magni excepturi repudiandae, dignissimos obcaecati neque corrupti et, corporis asperiores! Porro natus autem nam! Cumque cupiditate voluptas recusandae, dolorum asperiores a. Adipisci, illum necessitatibus.</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptatum molestias possimus, commodi tenetur repudiandae nihil ullam, qui ab consectetur, voluptatem at deserunt. Asperiores laboriosam, aliquid eveniet quisquam fugit temporibus!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda harum similique numquam dignissimos aliquam maiores natus eum iure blanditiis, est ullam pariatur doloremque nesciunt adipisci molestiae eos culpa fugit libero?
+        Eum distinctio vitae ab quos possimus, neque non, quis dolore natus corrupti, itaque officiis in! Eveniet, et fugit dignissimos cumque ad nam laudantium perferendis quis quia iste sunt pariatur nemo?</div>
+    </div>
+    
+</body>
+</html>
